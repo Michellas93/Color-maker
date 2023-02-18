@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+  font-family: "Shantell Sans", cursive;
+}
+#container {
+  padding-block: 2em;
+  border-radius: 10px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: max(
+    70%,
+    300px
+  ); /* vezme argumenty a porovná, kdo je tuhle chvíli větší max a ten použije */
+  margin-inline: auto;
+  gap: 2rem;
+}
+label {
+  font-family: "Shantell Sans", cursive;
+}
+#red {
+  accent-color: rgb(243, 9, 9) !important;
+  width: 100%;
+  cursor: pointer;
+}
+#green {
+  accent-color: green !important;
+  width: 100%;
+  cursor: pointer;
+}
+#blue {
+  accent-color: blue !important;
+  width: 100%;
+  cursor: pointer;
+}
+#hex {
+  border-radius: 10px;
+  padding-block: 1em;
+  width: 10em;
+  margin-inline: auto;
+  border: 1px solid black;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-family: "Shantell Sans", cursive;
+}
+#hex:hover {
+  background-color: rgb(199, 199, 199);
+}
