@@ -32,21 +32,24 @@ function colorBackground() {
 red.addEventListener("input", (e) => {
   redlabel.innerText = `${e.target.value}%`;
   //   console.log(Math.round(255 * e.target.value) / 100);
-  rgb.red = Math.round((255 * e.target.value) / 100);
+  let percentValue = e.target.value / 100;
+  rgb.red = Math.round(255 * percentValue);
   colorBackground();
 });
 
 green.addEventListener("input", (e) => {
   greenlabel.innerText = `${e.target.value}%`;
   //   console.log(Math.round(255 * e.target.value) / 100);
-  rgb.green = Math.round((255 * e.target.value) / 100);
+  let percentValue = e.target.value / 100;
+  rgb.green = Math.round(255 * percentValue);
   colorBackground();
 });
 
 blue.addEventListener("input", (e) => {
   bluelabel.innerText = `${e.target.value}%`;
   //   console.log(Math.round(255 * e.target.value) / 100);
-  rgb.blue = Math.round((255 * e.target.value) / 100);
+  let percentValue = e.target.value / 100;
+  rgb.blue = Math.round(255 * percentValue);
   colorBackground();
 });
 // kopirovani barvy
